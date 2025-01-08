@@ -17,39 +17,23 @@ public class Parcel {
         this.processed = processed;
     }
 
-    public String getId() {
-        return parcelid;
-    }
+    public String getId() { return parcelid; }
 
-    public int getDaysInDepot() {
-        return daysInDepot;
-    }
+    public int getDaysInDepot() { return daysInDepot; }
 
-    public double getWeight() {
-        return weight;
-    }
+    public double getWeight() { return weight; }
 
-    public int getLength() {
-        return length;
-    }
-    public int getWidth() {
-        return width;
-    }
-    public int getHeight() {
-        return height;
-    }
+    public int getLength() {  return length; }
 
-    public int getVolume() {
-        return length * width * height;
-    }
+    public int getWidth() { return width; }
 
-    public boolean isProcessed() {
-        return processed;
-    }
+    public int getHeight() { return height; }
 
-    public void markAsProcessed() {
-        this.processed = true;
-    }
+    public int getVolume() { return length * width * height; }
+
+    public boolean isProcessed() { return processed; }
+
+    public void markAsProcessed() { this.processed = true; }
 
     @Override
     public String toString() {
