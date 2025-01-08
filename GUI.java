@@ -13,6 +13,7 @@ public class GUI extends JFrame {
     private JPanel customerQueuePanel;
     private JPanel logPanel;
     private JPanel buttonPanel;
+    private JPanel controlsPanel; // Controls panel for new buttons
 
     // JTable for customer queue
     private JTable customerQueueTable;
@@ -47,6 +48,10 @@ public class GUI extends JFrame {
         add(logPanel, BorderLayout.EAST);
         add(buttonPanel, BorderLayout.SOUTH);
 
+        // Buttons for actions like finding a parcel and calculating the fee
+        addFindParcelButton();
+        addCalculateFeeButton();
+
         // Make the frame visible
         setVisible(true);
 
@@ -61,12 +66,14 @@ public class GUI extends JFrame {
         customerQueuePanel = new JPanel();
         logPanel = new JPanel();
         buttonPanel = new JPanel();
+        controlsPanel = new JPanel(); // Initialize controlsPanel
 
         // Set up default layout for each panel
         parcelPanel.setLayout(new BorderLayout());
         customerQueuePanel.setLayout(new BorderLayout());
         logPanel.setLayout(new BorderLayout());
         buttonPanel.setLayout(new FlowLayout());
+        controlsPanel.setLayout(new FlowLayout()); // Set layout for controlsPanel
 
         // Set titles
         parcelPanel.setBorder(BorderFactory.createTitledBorder("Parcels to be Processed"));
@@ -96,6 +103,9 @@ public class GUI extends JFrame {
         addParcelButton = new JButton("Add New Parcel");
         addParcelButton.addActionListener(e -> openAddParcelDialog());
         buttonPanel.add(addParcelButton);
+
+        // Add controlsPanel to buttonPanel or wherever it's appropriate in your layout
+        buttonPanel.add(controlsPanel);  // Make sure controlsPanel is added to the main layout
     }
 
     private void populateParcelPanel() {
@@ -127,10 +137,10 @@ public class GUI extends JFrame {
 
     private void populateCustomerQueueTable() {
         Queue<Customer> queue = customerQueue.getCustomerQueue();
-    
+
         String[] columnNames = {"Queue #", "Customer Name", "Parcel ID"};
         Object[][] rowData = new Object[queue.size()][3];
-    
+
         int index = 0;
         for (Customer customer : queue) {
             rowData[index][0] = customer.getQueueNumber();
@@ -138,16 +148,15 @@ public class GUI extends JFrame {
             rowData[index][2] = customer.getId();
             index++;
         }
-    
+
         customerQueuePanel.removeAll();
         customerQueueTable = new JTable(rowData, columnNames);
         JScrollPane scrollPane = new JScrollPane(customerQueueTable);
         customerQueuePanel.add(scrollPane, BorderLayout.CENTER);
-    
+
         customerQueuePanel.revalidate();
         customerQueuePanel.repaint();
     }
-    
 
     private void processNextCustomer() {
         if (!customerQueue.isEmpty()) {
@@ -168,42 +177,42 @@ public class GUI extends JFrame {
     private void openAddCustomerDialog() {
         JDialog customerDialog = new JDialog(this, "Add New Customer", true);
         customerDialog.setLayout(new GridLayout(5, 2));
-    
+
         // Customer form fields
         JTextField nameField = new JTextField();
         JTextField parcelIdField = new JTextField();
-    
+
         customerDialog.add(new JLabel("Full Name:"));
         customerDialog.add(nameField);
         customerDialog.add(new JLabel("Parcel ID:"));
         customerDialog.add(parcelIdField);
-    
+
         JButton addButton = new JButton("Add Customer");
         addButton.addActionListener(e -> {
             String fullName = nameField.getText();
             String parcelId = parcelIdField.getText();
-    
+
             // The QueueNumber is based on the current size of the customer queue
             int queueNumber = customerQueue.size() + 1;
-    
+
             // Create new customer with the input details
-            Customer newCustomer = new Customer("", fullName, parcelId,String.valueOf(queueNumber));
+            Customer newCustomer = new Customer("", fullName, parcelId, String.valueOf(queueNumber));
             customerQueue.addCustomer(newCustomer);
-    
+
             // Add a log entry for the new customer
             log.addEntry("New customer added: " + fullName + " with parcel " + parcelId);
-    
+
             // Update GUI to reflect the newly added customer
             populateCustomerQueueTable();
             customerDialog.dispose();
         });
-    
+
         customerDialog.add(addButton);
         customerDialog.setSize(300, 200);
         customerDialog.setLocationRelativeTo(this);
         customerDialog.setVisible(true);
     }
-    
+
     // Open the dialog to add a new parcel
     private void openAddParcelDialog() {
         JDialog parcelDialog = new JDialog(this, "Add New Parcel", true);
@@ -253,5 +262,40 @@ public class GUI extends JFrame {
         parcelDialog.setSize(300, 300);
         parcelDialog.setLocationRelativeTo(this);
         parcelDialog.setVisible(true);
+    }
+
+    private void addFindParcelButton() {
+        JButton findParcelButton = new JButton("Find Parcel by ID");
+        findParcelButton.addActionListener(e -> {
+            String parcelId = JOptionPane.showInputDialog(this, "Enter Parcel ID:");
+            if (parcelId != null && !parcelId.isEmpty()) {
+                Parcel foundParcel = parcelMap.getParcel(parcelId);
+                if (foundParcel != null) {
+                    JOptionPane.showMessageDialog(this, "Parcel found: " + foundParcel);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Parcel not found.");
+                }
+            }
+        });
+
+        controlsPanel.add(findParcelButton);
+    }
+
+    private void addCalculateFeeButton() {
+        JButton calculateFeeButton = new JButton("Calculate Fee for Parcel");
+        calculateFeeButton.addActionListener(e -> {
+            String parcelId = JOptionPane.showInputDialog(this, "Enter Parcel ID:");
+            if (parcelId != null && !parcelId.isEmpty()) {
+                Parcel parcel = parcelMap.getParcel(parcelId);
+                if (parcel != null) {
+                    double fee = worker.calculateFee(parcel);
+                    JOptionPane.showMessageDialog(this, "Fee for parcel " + parcelId + ": " + fee);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Parcel not found.");
+                }
+            }
+        });
+
+        controlsPanel.add(calculateFeeButton);
     }
 }
