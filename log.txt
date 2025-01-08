@@ -1,0 +1,16 @@
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
