@@ -20,8 +20,10 @@ public class GUI extends JFrame {
     // Text area for log display
     private JTextArea logTextArea;
 
-    // Button to process next customer
+    // Buttons
     private JButton processCustomerButton;
+    private JButton addCustomerButton;
+    private JButton addParcelButton;
 
     public GUI(QueueOfCustomers customerQueue, ParcelMap parcelMap, Log log) {
         this.customerQueue = customerQueue;
@@ -84,13 +86,21 @@ public class GUI extends JFrame {
         processCustomerButton = new JButton("Process Next Customer");
         processCustomerButton.addActionListener(e -> processNextCustomer());
         buttonPanel.add(processCustomerButton);
+
+        // Initialize add customer button
+        addCustomerButton = new JButton("Add New Customer");
+        addCustomerButton.addActionListener(e -> openAddCustomerDialog());
+        buttonPanel.add(addCustomerButton);
+
+        // Initialize add parcel button
+        addParcelButton = new JButton("Add New Parcel");
+        addParcelButton.addActionListener(e -> openAddParcelDialog());
+        buttonPanel.add(addParcelButton);
     }
 
     private void populateParcelPanel() {
-        // Get the list of unprocessed parcels from parcelMap
         var parcels = parcelMap.getUnprocessedParcels();
 
-        // Initialize column names and data for JTable
         String[] columnNames = {"Parcel ID", "Days in Depot", "Weight", "Length", "Width", "Height", "Processed"};
         Object[][] rowData = new Object[parcels.size()][7];
 
@@ -106,24 +116,21 @@ public class GUI extends JFrame {
             index++;
         }
 
-        // Remove the old table and add a new one
-        parcelPanel.removeAll();  // Remove old content from the panel
+        parcelPanel.removeAll();
         JTable parcelTable = new JTable(rowData, columnNames);
         JScrollPane scrollPane = new JScrollPane(parcelTable);
         parcelPanel.add(scrollPane, BorderLayout.CENTER);
 
-        // Revalidate and repaint the panel
         parcelPanel.revalidate();
         parcelPanel.repaint();
     }
 
     private void populateCustomerQueueTable() {
         Queue<Customer> queue = customerQueue.getCustomerQueue();
-
-        // Initialize column names and data for JTable
+    
         String[] columnNames = {"Queue #", "Customer Name", "Parcel ID"};
         Object[][] rowData = new Object[queue.size()][3];
-
+    
         int index = 0;
         for (Customer customer : queue) {
             rowData[index][0] = customer.getQueueNumber();
@@ -131,32 +138,120 @@ public class GUI extends JFrame {
             rowData[index][2] = customer.getId();
             index++;
         }
-
-        // Remove the old table and add a new one
-        customerQueuePanel.removeAll();  // Remove old content from the panel
+    
+        customerQueuePanel.removeAll();
         customerQueueTable = new JTable(rowData, columnNames);
         JScrollPane scrollPane = new JScrollPane(customerQueueTable);
         customerQueuePanel.add(scrollPane, BorderLayout.CENTER);
-
-        // Revalidate and repaint the panel
+    
         customerQueuePanel.revalidate();
         customerQueuePanel.repaint();
     }
+    
 
-    public void processNextCustomer() {
+    private void processNextCustomer() {
         if (!customerQueue.isEmpty()) {
-            // Process the next customer using the worker
             worker.processNextCustomer();
 
             // Re-populate the panels after processing
-            populateParcelPanel();  // Update parcel panel (remove processed parcel)
-            populateCustomerQueueTable();  // Update customer queue table (remove processed customer)
+            populateParcelPanel();
+            populateCustomerQueueTable();
 
-            // Update the log panel
             logTextArea.setText(log.getLog());
         } else {
             log.addEntry("No customers in the queue to process.");
             logTextArea.setText(log.getLog());
         }
+    }
+
+    // Open the dialog to add a new customer
+    private void openAddCustomerDialog() {
+        JDialog customerDialog = new JDialog(this, "Add New Customer", true);
+        customerDialog.setLayout(new GridLayout(5, 2));
+    
+        // Customer form fields
+        JTextField nameField = new JTextField();
+        JTextField parcelIdField = new JTextField();
+    
+        customerDialog.add(new JLabel("Full Name:"));
+        customerDialog.add(nameField);
+        customerDialog.add(new JLabel("Parcel ID:"));
+        customerDialog.add(parcelIdField);
+    
+        JButton addButton = new JButton("Add Customer");
+        addButton.addActionListener(e -> {
+            String fullName = nameField.getText();
+            String parcelId = parcelIdField.getText();
+    
+            // The QueueNumber is based on the current size of the customer queue
+            int queueNumber = customerQueue.size() + 1;
+    
+            // Create new customer with the input details
+            Customer newCustomer = new Customer("", fullName, parcelId,String.valueOf(queueNumber));
+            customerQueue.addCustomer(newCustomer);
+    
+            // Add a log entry for the new customer
+            log.addEntry("New customer added: " + fullName + " with parcel " + parcelId);
+    
+            // Update GUI to reflect the newly added customer
+            populateCustomerQueueTable();
+            customerDialog.dispose();
+        });
+    
+        customerDialog.add(addButton);
+        customerDialog.setSize(300, 200);
+        customerDialog.setLocationRelativeTo(this);
+        customerDialog.setVisible(true);
+    }
+    
+    // Open the dialog to add a new parcel
+    private void openAddParcelDialog() {
+        JDialog parcelDialog = new JDialog(this, "Add New Parcel", true);
+        parcelDialog.setLayout(new GridLayout(8, 2));
+
+        // Parcel form fields
+        JTextField idField = new JTextField();
+        JTextField daysInDepotField = new JTextField();
+        JTextField weightField = new JTextField();
+        JTextField lengthField = new JTextField();
+        JTextField widthField = new JTextField();
+        JTextField heightField = new JTextField();
+
+        parcelDialog.add(new JLabel("Parcel ID:"));
+        parcelDialog.add(idField);
+        parcelDialog.add(new JLabel("Days in Depot:"));
+        parcelDialog.add(daysInDepotField);
+        parcelDialog.add(new JLabel("Weight:"));
+        parcelDialog.add(weightField);
+        parcelDialog.add(new JLabel("Length:"));
+        parcelDialog.add(lengthField);
+        parcelDialog.add(new JLabel("Width:"));
+        parcelDialog.add(widthField);
+        parcelDialog.add(new JLabel("Height:"));
+        parcelDialog.add(heightField);
+
+        JButton addButton = new JButton("Add Parcel");
+        addButton.addActionListener(e -> {
+            String id = idField.getText();
+            int daysInDepot = Integer.parseInt(daysInDepotField.getText());
+            double weight = Double.parseDouble(weightField.getText());
+            int length = Integer.parseInt(lengthField.getText());
+            int width = Integer.parseInt(widthField.getText());
+            int height = Integer.parseInt(heightField.getText());
+
+            Parcel newParcel = new Parcel(id, daysInDepot, weight, length, width, height, false);
+            parcelMap.addParcel(newParcel);
+
+            log.addEntry("New parcel added: " + id);
+
+            // Update GUI
+            populateParcelPanel();
+            parcelDialog.dispose();
+        });
+
+        parcelDialog.add(addButton);
+        parcelDialog.setSize(300, 300);
+        parcelDialog.setLocationRelativeTo(this);
+        parcelDialog.setVisible(true);
     }
 }

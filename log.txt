@@ -201,3 +201,502 @@ No customers in the queue to process.
 No customers in the queue to process.
 No customers in the queue to process.
 No customers in the queue to process.
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
+Customer Fiona  Thoms collected parcel X475 (Fee: £6.9399999999999995)
+Parcel with ID X475 marked as processed.
+Customer Gillian  Hamilton collected parcel X386 (Fee: £10.6)
+Parcel with ID X386 marked as processed.
+Customer Harry  Johnston collected parcel X857 (Fee: £7.3100000000000005)
+Parcel with ID X857 marked as processed.
+Customer Helen  Webster collected parcel X309 (Fee: £5.95)
+Parcel with ID X309 marked as processed.
+Customer Jack  Houston collected parcel X733 (Fee: £11.425)
+Parcel with ID X733 marked as processed.
+Customer Jo  Hill collected parcel X285 (Fee: £4.9)
+Parcel with ID X285 marked as processed.
+Customer Joe  Woods collected parcel X213 (Fee: £9.75)
+Parcel with ID X213 marked as processed.
+Customer John  Brown collected parcel X009 (Fee: £12.085)
+Parcel with ID X009 marked as processed.
+Customer Judy  Hilman collected parcel X904 (Fee: £8.2)
+Parcel with ID X904 marked as processed.
+Customer Keith  Burns collected parcel X552 (Fee: £10.86)
+Parcel with ID X552 marked as processed.
+Customer Lily  Watson collected parcel X121 (Fee: £7.93)
+Parcel with ID X121 marked as processed.
+Customer Lucy  Grey attempted to collect non-existent parcel D050
+Customer Mary  Brown collected parcel X198 (Fee: £10.75)
+Parcel with ID X198 marked as processed.
+Customer Pamela  Field collected parcel X521 (Fee: £9.14)
+Parcel with ID X521 marked as processed.
+Customer Peter  White collected parcel X036 (Fee: £13.24)
+Parcel with ID X036 marked as processed.
+Customer Robert  Murray collected parcel X606 (Fee: £12.52)
+Parcel with ID X606 marked as processed.
+Customer Susan  Turner collected parcel X214 (Fee: £6.825)
+Parcel with ID X214 marked as processed.
+Customer Thomas  Young collected parcel X507 (Fee: £11.93)
+Parcel with ID X507 marked as processed.
+Customer Tim  Smith collected parcel X020 (Fee: £4.93)
+Parcel with ID X020 marked as processed.
+Customer Tony  Lawson collected parcel X086 (Fee: £9.705)
+Parcel with ID X086 marked as processed.
+Customer Ursula  Milton collected parcel X746 (Fee: £8.575)
+Parcel with ID X746 marked as processed.
+Customer Viola  Nicholson collected parcel X540 (Fee: £10.25)
+Parcel with ID X540 marked as processed.
+No customers in the queue to process.
+No customers in the queue to process.
+No customers in the queue to process.
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
+Customer Fiona  Thoms collected parcel X475 (Fee: £6.9399999999999995)
+Parcel with ID X475 marked as processed.
+Customer Gillian  Hamilton collected parcel X386 (Fee: £10.6)
+Parcel with ID X386 marked as processed.
+Customer Harry  Johnston collected parcel X857 (Fee: £7.3100000000000005)
+Parcel with ID X857 marked as processed.
+Customer Helen  Webster collected parcel X309 (Fee: £5.95)
+Parcel with ID X309 marked as processed.
+Customer Jack  Houston collected parcel X733 (Fee: £11.425)
+Parcel with ID X733 marked as processed.
+Customer Jo  Hill collected parcel X285 (Fee: £4.9)
+Parcel with ID X285 marked as processed.
+Customer Joe  Woods collected parcel X213 (Fee: £9.75)
+Parcel with ID X213 marked as processed.
+Customer John  Brown collected parcel X009 (Fee: £12.085)
+Parcel with ID X009 marked as processed.
+Customer Judy  Hilman collected parcel X904 (Fee: £8.2)
+Parcel with ID X904 marked as processed.
+Customer Keith  Burns collected parcel X552 (Fee: £10.86)
+Parcel with ID X552 marked as processed.
+Customer Lily  Watson collected parcel X121 (Fee: £7.93)
+Parcel with ID X121 marked as processed.
+Customer Lucy  Grey collected parcel D050 (Fee: £4.6850000000000005)
+Parcel with ID D050 marked as processed.
+Customer Mary  Brown collected parcel X198 (Fee: £10.75)
+Parcel with ID X198 marked as processed.
+Customer Pamela  Field collected parcel X521 (Fee: £9.14)
+Parcel with ID X521 marked as processed.
+Customer Peter  White collected parcel D100 (Fee: £13.24)
+Parcel with ID D100 marked as processed.
+Customer Robert  Murray collected parcel X606 (Fee: £12.52)
+Parcel with ID X606 marked as processed.
+Customer Susan  Turner collected parcel X214 (Fee: £6.825)
+Parcel with ID X214 marked as processed.
+Customer Thomas  Young collected parcel X507 (Fee: £11.93)
+Parcel with ID X507 marked as processed.
+Customer Tim  Smith collected parcel X020 (Fee: £4.93)
+Parcel with ID X020 marked as processed.
+Customer Tony  Lawson collected parcel X086 (Fee: £9.705)
+Parcel with ID X086 marked as processed.
+Customer Ursula  Milton collected parcel X746 (Fee: £8.575)
+Parcel with ID X746 marked as processed.
+Customer Viola  Nicholson collected parcel X540 (Fee: £10.25)
+Parcel with ID X540 marked as processed.
+Customer Dario  Ellison collected parcel X324 (Fee: £6.12)
+Parcel with ID X324 marked as processed.
+Customer Ruby  Padilla attempted to collect non-existent parcel X999
+Customer Uriel  Francis collected parcel X123 (Fee: £8.575)
+Parcel with ID X123 marked as processed.
+Customer Zaid  Gay attempted to collect non-existent parcel X696
+Customer Lennon  Cook collected parcel D025 (Fee: £6.0675)
+Parcel with ID D025 marked as processed.
+Customer Amare  Brennan collected parcel X543 (Fee: £7.3100000000000005)
+Parcel with ID X543 marked as processed.
+Customer Lyla  Mayer collected parcel X456 (Fee: £8.2)
+Parcel with ID X456 marked as processed.
+Customer Charity  Strickland collected parcel X654 (Fee: £11.15)
+Parcel with ID X654 marked as processed.
+Customer Aubree  Horne collected parcel X567 (Fee: £9.18)
+Parcel with ID X567 marked as processed.
+Customer Kiera  Mathews collected parcel X765 (Fee: £7.98)
+Parcel with ID X765 marked as processed.
+Customer Izaiah  Klein collected parcel X678 (Fee: £8.69)
+Parcel with ID X678 marked as processed.
+Customer Carly  Roach collected parcel X876 (Fee: £9.27)
+Parcel with ID X876 marked as processed.
+No customers in the queue to process.
+No customers in the queue to process.
+No customers in the queue to process.
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
+Customer Fiona  Thoms collected parcel X475 (Fee: £6.9399999999999995)
+Parcel with ID X475 marked as processed.
+Customer Gillian  Hamilton collected parcel X386 (Fee: £10.6)
+Parcel with ID X386 marked as processed.
+Customer Harry  Johnston collected parcel X857 (Fee: £7.3100000000000005)
+Parcel with ID X857 marked as processed.
+Customer Helen  Webster collected parcel X309 (Fee: £5.95)
+Parcel with ID X309 marked as processed.
+Customer Jack  Houston collected parcel X733 (Fee: £11.425)
+Parcel with ID X733 marked as processed.
+Customer Jo  Hill collected parcel X285 (Fee: £4.9)
+Parcel with ID X285 marked as processed.
+Customer Joe  Woods collected parcel X213 (Fee: £9.75)
+Parcel with ID X213 marked as processed.
+Customer John  Brown collected parcel X009 (Fee: £12.085)
+Parcel with ID X009 marked as processed.
+Customer Judy  Hilman collected parcel X904 (Fee: £8.2)
+Parcel with ID X904 marked as processed.
+Customer Keith  Burns collected parcel X552 (Fee: £10.86)
+Parcel with ID X552 marked as processed.
+Customer Lily  Watson collected parcel X121 (Fee: £7.93)
+Parcel with ID X121 marked as processed.
+Customer Lucy  Grey collected parcel D050 (Fee: £4.6850000000000005)
+Parcel with ID D050 marked as processed.
+Customer Mary  Brown collected parcel X198 (Fee: £10.75)
+Parcel with ID X198 marked as processed.
+Customer Pamela  Field collected parcel X521 (Fee: £9.14)
+Parcel with ID X521 marked as processed.
+Customer Peter  White collected parcel D100 (Fee: £0.0)
+Parcel with ID D100 marked as processed.
+Customer Robert  Murray collected parcel X606 (Fee: £12.52)
+Parcel with ID X606 marked as processed.
+Customer Susan  Turner collected parcel X214 (Fee: £6.825)
+Parcel with ID X214 marked as processed.
+Customer Thomas  Young collected parcel X507 (Fee: £11.93)
+Parcel with ID X507 marked as processed.
+Customer Tim  Smith collected parcel X020 (Fee: £4.93)
+Parcel with ID X020 marked as processed.
+Customer Tony  Lawson collected parcel X086 (Fee: £9.705)
+Parcel with ID X086 marked as processed.
+Customer Ursula  Milton collected parcel X746 (Fee: £8.575)
+Parcel with ID X746 marked as processed.
+Customer Viola  Nicholson collected parcel X540 (Fee: £10.25)
+Parcel with ID X540 marked as processed.
+Customer Dario  Ellison collected parcel X324 (Fee: £6.12)
+Parcel with ID X324 marked as processed.
+Customer Ruby  Padilla attempted to collect non-existent parcel X999
+Customer Uriel  Francis collected parcel X123 (Fee: £8.575)
+Parcel with ID X123 marked as processed.
+Customer Zaid  Gay attempted to collect non-existent parcel X696
+Customer Lennon  Cook collected parcel D025 (Fee: £6.0675)
+Parcel with ID D025 marked as processed.
+Customer Amare  Brennan collected parcel X543 (Fee: £7.3100000000000005)
+Parcel with ID X543 marked as processed.
+Customer Lyla  Mayer collected parcel X456 (Fee: £8.2)
+Parcel with ID X456 marked as processed.
+Customer Charity  Strickland collected parcel X654 (Fee: £11.15)
+Parcel with ID X654 marked as processed.
+Customer Aubree  Horne collected parcel X567 (Fee: £9.18)
+Parcel with ID X567 marked as processed.
+Customer Kiera  Mathews collected parcel X765 (Fee: £7.98)
+Parcel with ID X765 marked as processed.
+Customer Izaiah  Klein collected parcel X678 (Fee: £8.69)
+Parcel with ID X678 marked as processed.
+Customer Carly  Roach collected parcel X876 (Fee: £9.27)
+Parcel with ID X876 marked as processed.
+No customers in the queue to process.
+No customers in the queue to process.
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
+Customer Fiona  Thoms collected parcel X475 (Fee: £6.9399999999999995)
+Parcel with ID X475 marked as processed.
+Customer Gillian  Hamilton collected parcel X386 (Fee: £10.6)
+Parcel with ID X386 marked as processed.
+Customer Harry  Johnston collected parcel X857 (Fee: £7.3100000000000005)
+Parcel with ID X857 marked as processed.
+Customer Helen  Webster collected parcel X309 (Fee: £5.95)
+Parcel with ID X309 marked as processed.
+Customer Jack  Houston collected parcel X733 (Fee: £11.425)
+Parcel with ID X733 marked as processed.
+Customer Jo  Hill collected parcel X285 (Fee: £4.9)
+Parcel with ID X285 marked as processed.
+Customer Joe  Woods collected parcel X213 (Fee: £9.75)
+Parcel with ID X213 marked as processed.
+Customer John  Brown collected parcel X009 (Fee: £12.085)
+Parcel with ID X009 marked as processed.
+Customer Judy  Hilman collected parcel X904 (Fee: £8.2)
+Parcel with ID X904 marked as processed.
+Customer Keith  Burns collected parcel X552 (Fee: £10.86)
+Parcel with ID X552 marked as processed.
+Customer Lily  Watson collected parcel X121 (Fee: £7.93)
+Parcel with ID X121 marked as processed.
+Customer Lucy  Grey collected parcel D050 (Fee: £4.6850000000000005)
+Parcel with ID D050 marked as processed.
+Customer Mary  Brown collected parcel X198 (Fee: £10.75)
+Parcel with ID X198 marked as processed.
+Customer Pamela  Field collected parcel X521 (Fee: £9.14)
+Parcel with ID X521 marked as processed.
+Customer Peter  White collected parcel D100 (Fee: £0.0)
+Parcel with ID D100 marked as processed.
+Customer Robert  Murray collected parcel X606 (Fee: £12.52)
+Parcel with ID X606 marked as processed.
+Customer Susan  Turner collected parcel X214 (Fee: £6.825)
+Parcel with ID X214 marked as processed.
+Customer Thomas  Young collected parcel X507 (Fee: £11.93)
+Parcel with ID X507 marked as processed.
+Customer Tim  Smith collected parcel X020 (Fee: £4.93)
+Parcel with ID X020 marked as processed.
+Customer Tony  Lawson collected parcel X086 (Fee: £9.705)
+Parcel with ID X086 marked as processed.
+Customer Ursula  Milton collected parcel X746 (Fee: £8.575)
+Parcel with ID X746 marked as processed.
+Customer Viola  Nicholson collected parcel X540 (Fee: £10.25)
+Parcel with ID X540 marked as processed.
+Customer Dario  Ellison collected parcel X324 (Fee: £6.12)
+Parcel with ID X324 marked as processed.
+Customer Ruby  Padilla attempted to collect non-existent parcel X999
+Customer Uriel  Francis collected parcel X123 (Fee: £8.575)
+Parcel with ID X123 marked as processed.
+Customer Zaid  Gay attempted to collect non-existent parcel X696
+Customer Lennon  Cook collected parcel D025 (Fee: £6.0675)
+Parcel with ID D025 marked as processed.
+Customer Amare  Brennan collected parcel X543 (Fee: £7.3100000000000005)
+Parcel with ID X543 marked as processed.
+Customer Lyla  Mayer collected parcel X456 (Fee: £8.2)
+Parcel with ID X456 marked as processed.
+Customer Charity  Strickland collected parcel X654 (Fee: £11.15)
+Parcel with ID X654 marked as processed.
+Customer Aubree  Horne collected parcel X567 (Fee: £9.18)
+Parcel with ID X567 marked as processed.
+Customer Kiera  Mathews collected parcel X765 (Fee: £7.98)
+Parcel with ID X765 marked as processed.
+Customer Izaiah  Klein collected parcel X678 (Fee: £8.69)
+Parcel with ID X678 marked as processed.
+Customer Carly  Roach collected parcel X876 (Fee: £9.27)
+Parcel with ID X876 marked as processed.
+New customer added: Bing Chilling with parcel X432
+Customer 1 Bing Chilling attempted to collect non-existent parcel 
+New parcel added: X213
+New customer added: Bing Chilling with parcel 123
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
+Customer Fiona  Thoms collected parcel X475 (Fee: £6.9399999999999995)
+Parcel with ID X475 marked as processed.
+Customer Gillian  Hamilton collected parcel X386 (Fee: £10.6)
+Parcel with ID X386 marked as processed.
+Customer Harry  Johnston collected parcel X857 (Fee: £7.3100000000000005)
+Parcel with ID X857 marked as processed.
+Customer Helen  Webster collected parcel X309 (Fee: £5.95)
+Parcel with ID X309 marked as processed.
+Customer Jack  Houston collected parcel X733 (Fee: £11.425)
+Parcel with ID X733 marked as processed.
+Customer Jo  Hill collected parcel X285 (Fee: £4.9)
+Parcel with ID X285 marked as processed.
+Customer Joe  Woods collected parcel X213 (Fee: £9.75)
+Parcel with ID X213 marked as processed.
+Customer John  Brown collected parcel X009 (Fee: £12.085)
+Parcel with ID X009 marked as processed.
+Customer Judy  Hilman collected parcel X904 (Fee: £8.2)
+Parcel with ID X904 marked as processed.
+Customer Keith  Burns collected parcel X552 (Fee: £10.86)
+Parcel with ID X552 marked as processed.
+Customer Lily  Watson collected parcel X121 (Fee: £7.93)
+Parcel with ID X121 marked as processed.
+Customer Lucy  Grey collected parcel D050 (Fee: £4.6850000000000005)
+Parcel with ID D050 marked as processed.
+Customer Mary  Brown collected parcel X198 (Fee: £10.75)
+Parcel with ID X198 marked as processed.
+Customer Pamela  Field collected parcel X521 (Fee: £9.14)
+Parcel with ID X521 marked as processed.
+Customer Peter  White collected parcel D100 (Fee: £0.0)
+Parcel with ID D100 marked as processed.
+Customer Robert  Murray collected parcel X606 (Fee: £12.52)
+Parcel with ID X606 marked as processed.
+Customer Susan  Turner collected parcel X214 (Fee: £6.825)
+Parcel with ID X214 marked as processed.
+Customer Thomas  Young collected parcel X507 (Fee: £11.93)
+Parcel with ID X507 marked as processed.
+Customer Tim  Smith collected parcel X020 (Fee: £4.93)
+Parcel with ID X020 marked as processed.
+Customer Tony  Lawson collected parcel X086 (Fee: £9.705)
+Parcel with ID X086 marked as processed.
+Customer Ursula  Milton collected parcel X746 (Fee: £8.575)
+Parcel with ID X746 marked as processed.
+Customer Viola  Nicholson collected parcel X540 (Fee: £10.25)
+Parcel with ID X540 marked as processed.
+Customer Dario  Ellison collected parcel X324 (Fee: £6.12)
+Parcel with ID X324 marked as processed.
+Customer Ruby  Padilla attempted to collect non-existent parcel X999
+Customer Uriel  Francis collected parcel X123 (Fee: £8.575)
+Parcel with ID X123 marked as processed.
+Customer Zaid  Gay attempted to collect non-existent parcel X696
+Customer Lennon  Cook collected parcel D025 (Fee: £6.0675)
+Parcel with ID D025 marked as processed.
+Customer Amare  Brennan collected parcel X543 (Fee: £7.3100000000000005)
+Parcel with ID X543 marked as processed.
+Customer Lyla  Mayer collected parcel X456 (Fee: £8.2)
+Parcel with ID X456 marked as processed.
+Customer Charity  Strickland collected parcel X654 (Fee: £11.15)
+Parcel with ID X654 marked as processed.
+Customer Aubree  Horne collected parcel X567 (Fee: £9.18)
+Parcel with ID X567 marked as processed.
+Customer Kiera  Mathews collected parcel X765 (Fee: £7.98)
+Parcel with ID X765 marked as processed.
+Customer Izaiah  Klein collected parcel X678 (Fee: £8.69)
+Parcel with ID X678 marked as processed.
+Customer Carly  Roach collected parcel X876 (Fee: £9.27)
+Parcel with ID X876 marked as processed.
+No customers in the queue to process.
+No customers in the queue to process.
+No customers in the queue to process.
+No customers in the queue to process.
+No customers in the queue to process.
+No customers in the queue to process.
+New parcel added: X412
+New customer added: Bing Chilling with parcel X412
+Customer 1 Bing Chilling attempted to collect non-existent parcel 
+New customer added: assdf with parcel X432
+Customer 1 assdf attempted to collect non-existent parcel 
+Customer Andrew  Robertson collected parcel X919 (Fee: £11.15)
+Parcel with ID X919 marked as processed.
+Customer Ann  Jones collected parcel X064 (Fee: £10.6)
+Parcel with ID X064 marked as processed.
+Customer Blair  Foster collected parcel X682 (Fee: £8.21)
+Parcel with ID X682 marked as processed.
+Customer Bob  Dawson collected parcel X780 (Fee: £6.1)
+Parcel with ID X780 marked as processed.
+Customer Chris  Smith collected parcel X782 (Fee: £8.09)
+Parcel with ID X782 marked as processed.
+Customer Dave  Jackson collected parcel X316 (Fee: £11.25)
+Parcel with ID X316 marked as processed.
+Customer David  Hunter collected parcel X278 (Fee: £7.25)
+Parcel with ID X278 marked as processed.
+Customer Donald  Murray collected parcel X720 (Fee: £6.12)
+Parcel with ID X720 marked as processed.
+Customer Fiona  Thoms collected parcel X475 (Fee: £6.9399999999999995)
+Parcel with ID X475 marked as processed.
+Customer Gillian  Hamilton collected parcel X386 (Fee: £10.6)
+Parcel with ID X386 marked as processed.
+Customer Harry  Johnston collected parcel X857 (Fee: £7.3100000000000005)
+Parcel with ID X857 marked as processed.
+Customer Helen  Webster collected parcel X309 (Fee: £5.95)
+Parcel with ID X309 marked as processed.
+Customer Jack  Houston collected parcel X733 (Fee: £11.425)
+Parcel with ID X733 marked as processed.
+Customer Jo  Hill collected parcel X285 (Fee: £4.9)
+Parcel with ID X285 marked as processed.
+Customer Joe  Woods collected parcel X213 (Fee: £9.75)
+Parcel with ID X213 marked as processed.
+Customer John  Brown collected parcel X009 (Fee: £12.085)
+Parcel with ID X009 marked as processed.
+Customer Judy  Hilman collected parcel X904 (Fee: £8.2)
+Parcel with ID X904 marked as processed.
+Customer Keith  Burns collected parcel X552 (Fee: £10.86)
+Parcel with ID X552 marked as processed.
+Customer Lily  Watson collected parcel X121 (Fee: £7.93)
+Parcel with ID X121 marked as processed.
+Customer Lucy  Grey collected parcel D050 (Fee: £4.6850000000000005)
+Parcel with ID D050 marked as processed.
+Customer Mary  Brown collected parcel X198 (Fee: £10.75)
+Parcel with ID X198 marked as processed.
+Customer Pamela  Field collected parcel X521 (Fee: £9.14)
+Parcel with ID X521 marked as processed.
+Customer Peter  White collected parcel D100 (Fee: £0.0)
+Parcel with ID D100 marked as processed.
+Customer Robert  Murray collected parcel X606 (Fee: £12.52)
+Parcel with ID X606 marked as processed.
+Customer Susan  Turner collected parcel X214 (Fee: £6.825)
+Parcel with ID X214 marked as processed.
+Customer Thomas  Young collected parcel X507 (Fee: £11.93)
+Parcel with ID X507 marked as processed.
+Customer Tim  Smith collected parcel X020 (Fee: £4.93)
+Parcel with ID X020 marked as processed.
+Customer Tony  Lawson collected parcel X086 (Fee: £9.705)
+Parcel with ID X086 marked as processed.
+Customer Ursula  Milton collected parcel X746 (Fee: £8.575)
+Parcel with ID X746 marked as processed.
+Customer Viola  Nicholson collected parcel X540 (Fee: £10.25)
+Parcel with ID X540 marked as processed.
+Customer Dario  Ellison collected parcel X324 (Fee: £6.12)
+Parcel with ID X324 marked as processed.
+Customer Ruby  Padilla attempted to collect non-existent parcel X999
+Customer Uriel  Francis collected parcel X123 (Fee: £8.575)
+Parcel with ID X123 marked as processed.
+Customer Zaid  Gay attempted to collect non-existent parcel X696
+Customer Lennon  Cook collected parcel D025 (Fee: £6.0675)
+Parcel with ID D025 marked as processed.
+Customer Amare  Brennan collected parcel X543 (Fee: £7.3100000000000005)
+Parcel with ID X543 marked as processed.
+Customer Lyla  Mayer collected parcel X456 (Fee: £8.2)
+Parcel with ID X456 marked as processed.
+Customer Charity  Strickland collected parcel X654 (Fee: £11.15)
+Parcel with ID X654 marked as processed.
+Customer Aubree  Horne collected parcel X567 (Fee: £9.18)
+Parcel with ID X567 marked as processed.
+Customer Kiera  Mathews collected parcel X765 (Fee: £7.98)
+Parcel with ID X765 marked as processed.
+Customer Izaiah  Klein collected parcel X678 (Fee: £8.69)
+Parcel with ID X678 marked as processed.
+Customer Carly  Roach collected parcel X876 (Fee: £9.27)
+Parcel with ID X876 marked as processed.
+No customers in the queue to process.
+No customers in the queue to process.
+New customer added: BING CHILLING with parcel X321
+Customer  BING CHILLING collected parcel X321 (Fee: £6.1)
+Parcel with ID X321 marked as processed.
+No customers in the queue to process.
+No customers in the queue to process.

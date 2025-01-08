@@ -46,8 +46,8 @@ public class Worker {
             return fee * 0.75;
         } else if (parcel.getId().equals("D050")) {
             return fee * 0.5;
-        } else if (parcel.getId().equals("D025")) {
-            return fee * 0;
+        } else if (parcel.getId().equals("D100")) {
+            return 0;
         } else {
             return fee;
         }
