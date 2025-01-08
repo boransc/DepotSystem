@@ -7,25 +7,15 @@ import java.util.stream.Collectors;
 public class ParcelMap {
     private Map<String, Parcel> parcels;
 
-    public ParcelMap() {
-        this.parcels = new HashMap<>();
-    }
+    public ParcelMap() { this.parcels = new HashMap<>(); }
 
-    public void addParcel(Parcel parcel) {
-        parcels.put(parcel.getId(), parcel);
-    }
+    public void addParcel(Parcel parcel) { parcels.put(parcel.getId(), parcel); }
 
-    public Parcel removeParcel(String id) {
-        return parcels.remove(id);
-    }
+    public Parcel removeParcel(String id) { return parcels.remove(id); }
 
-    public Parcel getParcel(String id) {
-        return parcels.get(id);
-    }
+    public Parcel getParcel(String id) { return parcels.get(id); }
 
-    public boolean containsParcel(String id) {
-        return parcels.containsKey(id);
-    }
+    public boolean containsParcel(String id) { return parcels.containsKey(id); }
 
     public boolean markParcelAsProcessed(String id) {
         Parcel parcel = parcels.get(id);

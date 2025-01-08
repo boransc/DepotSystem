@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
+import java.util.Queue;
 
 public class GUI extends JFrame {
     private QueueOfCustomers customerQueue;
@@ -11,8 +11,9 @@ public class GUI extends JFrame {
     private JPanel parcelPanel;
     private JPanel customerQueuePanel;
     private JPanel logPanel;
-    private JList<String> parcelList; // JList to display parcels
-    private DefaultListModel<String> parcelListModel; // Default model for the list
+
+    // Table to display customer queue
+    private JTable customerQueueTable;
 
     public GUI(QueueOfCustomers customerQueue, ParcelMap parcelMap, Log log) {
         this.customerQueue = customerQueue;
@@ -21,20 +22,23 @@ public class GUI extends JFrame {
 
         // Set up the JFrame
         setTitle("Depot Management System");
-        setSize(1200, 800);
+        setSize(1800, 1200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
         // Initialize panels
         initBasicPanels();
-        populateParcelsPanel();
 
         // Add panels to the frame
         add(parcelPanel, BorderLayout.WEST);
         add(customerQueuePanel, BorderLayout.CENTER);
         add(logPanel, BorderLayout.EAST);
 
+        // Populate the panels
+        populateParcelPanel();
+        populateCustomerQueueTable();
+        
         // Make the frame visible
         setVisible(true);
     }
@@ -51,31 +55,60 @@ public class GUI extends JFrame {
         logPanel.setLayout(new BorderLayout());
 
         // Set titles
-        parcelPanel.setBorder(BorderFactory.createTitledBorder("Parcels to be Processed"));
+        parcelPanel.setBorder(BorderFactory.createTitledBorder("Parcels"));
         customerQueuePanel.setBorder(BorderFactory.createTitledBorder("Customer Queue"));
         logPanel.setBorder(BorderFactory.createTitledBorder("Log Report"));
 
-        parcelPanel.setPreferredSize(new Dimension(400, 700));
-        logPanel.setPreferredSize(new Dimension(400, 700));
+        parcelPanel.setPreferredSize(new Dimension(600, 700));
+        logPanel.setPreferredSize(new Dimension(600, 700));
     }
 
-    private void populateParcelsPanel() {
-        // Get unprocessed parcels from the ParcelMap
-        List<Parcel> unprocessedParcels = parcelMap.getUnprocessedParcels();
+    // Populate parcel panel with the parcels
+    private void populateParcelPanel() {
+        // Get the list of unprocessed parcels from parcelMap
+        var parcels = parcelMap.getUnprocessedParcels();
+        
+        // Initialize column names and data for JTable
+        String[] columnNames = {"Parcel ID", "Days in Depot", "Weight", "Length", "Width", "Height", "Processed"};
+        Object[][] rowData = new Object[parcels.size()][7];
 
-        // Create a list model to hold parcel information
-        parcelListModel = new DefaultListModel<>();
-        for (Parcel parcel : unprocessedParcels) {
-            // Add formatted parcel info to the list model
-            parcelListModel.addElement(parcel.getId() + " - " + parcel.getDaysInDepot() + " days in depot");
+        int index = 0;
+        for (Parcel parcel : parcels) {
+            rowData[index][0] = parcel.getId();
+            rowData[index][1] = parcel.getDaysInDepot();
+            rowData[index][2] = parcel.getWeight();
+            rowData[index][3] = parcel.getLength();
+            rowData[index][4] = parcel.getWidth();
+            rowData[index][5] = parcel.getHeight();
+            rowData[index][6] = parcel.isProcessed() ? "Yes" : "No";
+            index++;
         }
 
-        // Create a JList to display the parcels
-        parcelList = new JList<>(parcelListModel);
-        parcelList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        parcelList.setVisibleRowCount(10);
+        // Create and set up the table with the data
+        JTable parcelTable = new JTable(rowData, columnNames);
+        JScrollPane scrollPane = new JScrollPane(parcelTable);
+        parcelPanel.add(scrollPane, BorderLayout.CENTER);
+    }
 
-        // Add the JList to the parcelPanel inside a scroll pane
-        parcelPanel.add(new JScrollPane(parcelList), BorderLayout.CENTER);
+    // Populate customer queue table
+    private void populateCustomerQueueTable() {
+        Queue<Customer> queue = customerQueue.getCustomerQueue();
+        
+        // Initialize column names and data for JTable
+        String[] columnNames = {"Queue #", "Customer Name", "Parcel ID"};
+        Object[][] rowData = new Object[queue.size()][3];
+
+        int index = 0;
+        for (Customer customer : queue) {
+            rowData[index][0] = customer.getQueueNumber();
+            rowData[index][1] = customer.getFullName();
+            rowData[index][2] = customer.getId();
+            index++;
+        }
+
+        // Create and set up the table with the data
+        customerQueueTable = new JTable(rowData, columnNames);
+        JScrollPane scrollPane = new JScrollPane(customerQueueTable);
+        customerQueuePanel.add(scrollPane, BorderLayout.CENTER);
     }
 }

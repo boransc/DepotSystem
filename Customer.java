@@ -11,15 +11,9 @@ public class Customer {
         this.queueNo = queueNo;
     }
 
-    public String getFullName() {
-        return firstName + " " + lastName;
-    }
+    public String getFullName() { return firstName + " " + lastName; }
 
-    public String getId() {
-        return parcelid;
-    }
+    public String getId() { return parcelid; }
 
-    public String getQueueNumber() {
-        return queueNo;
-    }
+    public String getQueueNumber() { return queueNo; }
 }

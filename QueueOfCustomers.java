@@ -1,27 +1,37 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class QueueOfCustomers {
     private Queue<Customer> customerQueue;
 
-    public QueueOfCustomers() {
-        this.customerQueue = new LinkedList<>();
+    public QueueOfCustomers() { this.customerQueue = new LinkedList<>(); }
+
+        public List<Customer> getQueue() {
+        return new ArrayList<>(customerQueue);
     }
 
-    public void addCustomer(Customer customer) {
-        customerQueue.add(customer);
-    }
+    public Queue<Customer> getCustomerQueue() { return customerQueue; }
 
-    public Customer removeCustomer() {
-        return customerQueue.poll();
-    }
+    public void addCustomer(Customer customer) { customerQueue.add(customer); }
 
-    public boolean isEmpty() {
-        return customerQueue.isEmpty();
-    }
+    public Customer removeCustomer() { return customerQueue.poll(); }
 
-    public int size() {
-        return customerQueue.size();
+    public boolean isEmpty() { return customerQueue.isEmpty(); }
+
+    public int size() { return customerQueue.size(); }
+
+    public Object[][] getCustomerData() {
+        Object[][] data = new Object[customerQueue.size()][3];
+        int index = 0;
+        for (Customer customer : customerQueue) {
+            data[index][0] = customer.getQueueNumber();
+            data[index][1] = customer.getFullName();
+            data[index][2] = customer.getId(); // Parcel ID
+            index++;
+        }
+        return data;
     }
 
     public void displayQueue() {

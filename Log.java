@@ -6,9 +6,7 @@ public class Log {
     private static Log instance;
     private StringBuilder logEntries;
 
-    private Log() {
-        logEntries = new StringBuilder();
-    }
+    private Log() { logEntries = new StringBuilder(); }
 
     public static Log getInstance() {
         if (instance == null) {
@@ -30,7 +28,5 @@ public class Log {
         }
     }
 
-    public String getLog() {
-        return logEntries.toString();
-    }
+    public String getLog() { return logEntries.toString(); }
 }
